@@ -2,7 +2,7 @@ import java.util.*;
 
 public class SortMain {
 
-	static final int SIZE = 100;
+	static final int SIZE = 100000;
 
 	public static void main(String[] args) {
 		int[] x = new int[SIZE];
