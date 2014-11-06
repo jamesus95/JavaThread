@@ -2,7 +2,7 @@ import java.util.*;
 
 public class SortMain {
 
-	static final int SIZE = 100000;
+	static final int SIZE = 10000000;
 
 	public static void main(String[] args) {
 		int[] x = new int[SIZE];
@@ -14,10 +14,19 @@ public class SortMain {
 		System.out.println("Time: " + (end - start));
 		//print(x);
 
-		populate(x);
+		/*populate(x);
 		ThreadedMergeSort tms = new ThreadedMergeSort();
 		start = System.nanoTime();
 		tms.sort(x);
+		end = System.nanoTime();
+		System.out.println("Time: " + (end - start));
+		//print(x);
+		*/
+
+		populate(x);
+		MergeSortHybrid msh = new MergeSortHybrid();
+		start = System.nanoTime();
+		msh.sort(x);
 		end = System.nanoTime();
 		System.out.println("Time: " + (end - start));
 		//print(x);

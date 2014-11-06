@@ -48,8 +48,6 @@ public class MergeSort {
 			while (tempIndex < end) {
 				sorting[tempIndex++] = tempStorage[index++];
 			}
-			//System.out.println("{" + sorting[0] + ", " + sorting[1] + ", " + sorting[2] + ", " + sorting[3] + ", " + sorting[4] + ", " 
-			//+ sorting[5] + ", " + sorting[6] + ", " + sorting[7] + ", " + sorting[8] + ", " + sorting[9] + "}");
 		}
 	}
 
